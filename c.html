@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/css/swiper.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/js/swiper.min.js">
+</head>
+
+<body>
+    <div class="container">
+        <div class="swiper-container clients-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="javascript:;">
+                        <img src="https://dummyimage.com/150x80/e0e0e0/808080" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="javascript:;">
+                        <img src="https://dummyimage.com/150x80/e0e0e0/808080" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="javascript:;">
+                        <img src="https://dummyimage.com/150x80/e0e0e0/808080" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="javascript:;">
+                        <img src="https://dummyimage.com/150x80/e0e0e0/808080" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="javascript:;">
+                        <img src="https://dummyimage.com/150x80/e0e0e0/808080" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="javascript:;">
+                        <img src="https://dummyimage.com/150x80/e0e0e0/808080" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="javascript:;">
+                        <img src="https://dummyimage.com/150x80/e0e0e0/808080   " alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        $(function () {
+            const clients = new Swiper('.clients-slider', {
+                autoplay: true,
+                speed: 1500,
+                spaceBetween: 30,
+                slidesPerView: 6,
+                breakpoints: {
+                    1024: {
+                        slidesPerView: 4,
+                    },
+                    768: {
+                        slidesPerView: 3,
+                    },
+                    640: {
+                        slidesPerView: 2,
+                        spaceBetween: 0,
+                    },
+                    320: {
+                        slidesPerView: 1,
+                        spaceBetween: 0,
+                    }
+                }
+            })
+        })
+    </script>
+</body>
+
+</html>
